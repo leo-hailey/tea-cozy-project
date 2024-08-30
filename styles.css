@@ -1,0 +1,49 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+#navbar{
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    
+    display:flex;
+}
+
+#navbar .logo{
+    height: 50px;
+    margin: 10px;
+    justify-content: flex-start;
+}
+
+#navbar .page-links {
+    justify-content: flex-end;
+}
+
+a{
+    color: seashell;
+}
+
+#mission {
+    background-image: url(/images/img-mission-background.webp);
+    height: 700px;
+    display: flex;;
+}
+
+#mission h2, 
+#mission h4{
+    flex-direction: column;
+    align-items: center;
+}
