@@ -22,8 +22,12 @@ ul{
 #navbar{
     height: 69px;
     border-bottom: 1px solid seashell;
-    display:inline-flex;
     width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 #navbar .logo{
@@ -32,36 +36,31 @@ ul{
     justify-content: flex-start;
 }
 
-.page-links ul{
-    display: flex;
-}
-.page-links li {
-    display: inline-flex;
-    justify-content: flex-end;
+.page-links-item a {
     color: seashell;
 }
 
 .main-content {
     width: 1200px;
-    align-content: center;
+    
 }
 
 #mission {
     background-image: url(/images/img-mission-background.webp);
+
     height: 700px;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 #mission h2, 
 #mission h4{
     background-color: black;
     width: 1200px;
-    align-items: center;
-    justify-content: center;
-
+    
 }
 
 .totm {
@@ -71,9 +70,13 @@ ul{
     margin: 0 auto;
 }
 
-
+.totm-img-container{ 
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .totm-img{
     width: 300px;
-    height:200px;
+    height: 200px;
+    margin: 10px;
 }
