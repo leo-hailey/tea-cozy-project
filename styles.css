@@ -22,7 +22,10 @@ ul{
 #navbar{
     height: 69px;
     border-bottom: 1px solid seashell;
+    background-color: black;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 
 .navbar-container {
@@ -36,13 +39,25 @@ ul{
     justify-content: flex-start;
 }
 
-.page-links-item a {
-    color: seashell;
+.page-links-list{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-right: 20px;
 }
 
-.main-content {
-    width: 1200px;
-    
+.page-links-item a {
+    color: seashell;
+
+}
+
+/* Main content */
+
+.main-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 #mission {
@@ -60,7 +75,7 @@ ul{
 #mission h4{
     background-color: black;
     width: 1200px;
-    
+    line-height: 1.5em;
 }
 
 .totm {
@@ -68,15 +83,61 @@ ul{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .totm-img-container{ 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .totm-img{
     width: 300px;
     height: 200px;
     margin: 10px;
+}
+
+.caption {
+    margin-top: 10px;
+}
+
+/* Locations */
+
+.locations-container{
+    background-image: url(images/img-locations-background.webp);
+    display: flex;
+    flex-direction: column;
+    height: 570px; /* adjusted height to show coffee cup */
+    margin-top: 50px;
+    align-items: center;
+}
+.locations-container h2{
+    margin-top: 50px;
+}
+
+.locations{
+    display: flex;
+    gap: 40px;
+}
+
+.locations-box{
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    line-height: 3em;
+    margin: 40px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    line-height: 2em;
+}
+
+.copyright{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 50px;
 }
